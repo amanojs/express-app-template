@@ -1,0 +1,39 @@
+{
+  "name": "express_one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "SET DEBUG=app && nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "3.3.4",
+    "chalk": "4.1.0",
+    "debug": "^4.1.1",
+    "ejs": "^3.1.3",
+    "express": "4.15.2",
+    "jquery": "1.11.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
