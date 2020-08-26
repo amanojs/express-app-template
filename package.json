@@ -5,19 +5,27 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "SET DEBUG=app && nodemon app.js"
+    "server": "SET DEBUG=app,app:* && nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "3.3.4",
     "chalk": "4.1.0",
+    "cookie-parser": "^1.4.5",
     "debug": "^4.1.1",
     "ejs": "^3.1.3",
     "express": "4.15.2",
+    "express-session": "^1.17.1",
     "jquery": "1.11.3",
+    "mongodb": "^3.6.0",
     "morgan": "^1.10.0",
+    "mssql": "^6.2.1",
     "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0",
     "pug": "^3.0.0"
   },
   "devDependencies": {
@@ -33,7 +41,9 @@
     "delay": "2500",
     "env": {
       "NODE_ENV": "development",
-      "PORT": 4000
+      "PORT": 4000,
+      "MONGO_URL": "mongodb://localhost:27017",
+      "MONGO_NAME": "libraryApp"
     }
   }
 }

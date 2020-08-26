@@ -9,6 +9,10 @@
         "ecmaVersion": 11
     },
     "rules": {
+        "indent": [
+            "error",
+            2
+        ],
         "comma-dangle": [
             "error",
             "never"
@@ -21,13 +25,6 @@
             "warn",
             "double"
         ],
-        "semi": [
-            "error",
-            "never",
-            {
-                "beforeStatementContinuationChars": "never"
-            }
-        ],
         "semi-spacing": [
             "error",
             {
@@ -36,7 +33,7 @@
             }
         ],
         "semi-style": [
-            "error",
+            0,
             "first"
         ],
         "no-extra-semi": "error",
